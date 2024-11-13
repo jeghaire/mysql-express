@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - <%=title%></title>
+    <style>
+        main {
+            max-width: 300px;
+            margin: auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-size: 13px;
+            font-weight: 600;
+        }
+        input {
+            padding: 4px;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <h1>Registration</h1>
+    <form action="/" method="post">
+        <div>
+            <label for="fullname">Full Name (Surname first)</label>
+            <input type="text" id="fullname" name="fullname" class="" placeholder="Surname first">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="" placeholder="someone@gmail.com" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" class="" placeholder="******">
+        </div>
+        <button type="submit">Register</button>
+    </form>
+</main>
+</body>
+</html>

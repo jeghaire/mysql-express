@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members</title>
+</head>
+<body>
+    <div>
+        <h1>List of Members</h1>
+        
+        <section>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                </tr>
+                <% data.forEach((entry)=> {%>
+                <tr>
+                  <td><%= entry.name %></td>
+                  <td><%= entry.email %></td>
+                  <td><%= entry.password %></td>
+                </tr>
+                <% }) %>
+              </table>
+        </section>
+    </div>    
+</body>
+</html>
